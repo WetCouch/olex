@@ -1,0 +1,30 @@
+.blog-posts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    width: 90%;
+    margin: 5% auto;
+
+    .blog-post-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 70vh;
+        .blog-post {
+            background-color: white;
+            border-radius: 10px;
+            width: 60%;
+            padding: 3%;
+            text-align: center;
+            color: #252628;
+            .blog-post-title {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1em;
+                letter-spacing: 5px;
+            color: #252628;
+            }
+        }
+    }
+}

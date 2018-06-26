@@ -9,13 +9,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 45%;
-        height: 70vh;
+        width: 40vw;
+        height: 40vw;
+        background-position: center;
+        background-repeat: no-repeat;
         .blog-post {
             background-color: white;
             border-radius: 10px;
             width: 60%;
-            padding: 3%;
+            padding: 10% 5%;
             text-align: center;
             color: #252628;
             .blog-post-title {
@@ -23,7 +25,19 @@
                 text-transform: uppercase;
                 font-size: 1em;
                 letter-spacing: 5px;
-            color: #252628;
+                font-weight: 700;
+                font-size: 1.2em;
+                color: #252628;
+                margin-top: 5%;
+            }
+            .blog-post-date {
+                color: #969696;
+                font-size: 0.9em;
+            }
+            .blog-post-desc {
+                letter-spacing: 3px;
+                margin-top: 5%;
+                margin-bottom: 10%;
             }
         }
     }

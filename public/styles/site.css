@@ -1,3 +1,68 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url("../fonts/Lato-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: url("../fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url("../fonts/Lato-Bold.ttf"); }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
 #header {
   margin-top: 30px; }
 
@@ -22,13 +87,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    height: 70vh; }
+    width: 40vw;
+    height: 40vw;
+    background-position: center;
+    background-repeat: no-repeat; }
     .blog-posts-container .blog-post-container .blog-post {
       background-color: white;
       border-radius: 10px;
       width: 60%;
-      padding: 3%;
+      padding: 10% 5%;
       text-align: center;
       color: #252628; }
       .blog-posts-container .blog-post-container .blog-post .blog-post-title {
@@ -36,7 +103,17 @@
         text-transform: uppercase;
         font-size: 1em;
         letter-spacing: 5px;
-        color: #252628; }
+        font-weight: 700;
+        font-size: 1.2em;
+        color: #252628;
+        margin-top: 5%; }
+      .blog-posts-container .blog-post-container .blog-post .blog-post-date {
+        color: #969696;
+        font-size: 0.9em; }
+      .blog-posts-container .blog-post-container .blog-post .blog-post-desc {
+        letter-spacing: 3px;
+        margin-top: 5%;
+        margin-bottom: 10%; }
 
 #tiles {
   display: flex;
@@ -176,3 +253,26 @@
       #contact .contact-container .contact-info-container .contact-bold {
         white-space: nowrap;
         font-weight: 700; }
+
+.post-container .post-image {
+  width: 100%; }
+
+.post-container .post-title {
+  font-size: 1.65em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 5%;
+  text-align: center;
+  letter-spacing: 5px; }
+
+.post-container .post-date {
+  color: #969696;
+  text-align: center;
+  margin-top: 2%;
+  letter-spacing: 2px; }
+
+.post-container .post-content {
+  width: 70%;
+  margin: 5% auto;
+  letter-spacing: 2px;
+  line-height: 120%; }

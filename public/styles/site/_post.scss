@@ -1,0 +1,26 @@
+.post-container {
+    .post-image {
+        width: 100%;
+    }
+    .post-title {
+        font-size: 1.65em;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 5%;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    .post-date {
+        color: #969696;
+        text-align: center;
+        margin-top: 2%;
+        letter-spacing: 2px;
+    }
+    .post-content {
+        width: 70%;
+        margin: 5% auto;
+        letter-spacing: 2px;
+        line-height: 120%;
+    }
+}

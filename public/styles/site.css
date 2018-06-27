@@ -107,6 +107,11 @@ body {
         font-size: 1.2em;
         color: #252628;
         margin-top: 5%; }
+      .blog-posts-container .blog-post-container .blog-post .blog-post-line {
+        border: none;
+        border-top: 2px solid #00A0FF;
+        width: 40%;
+        margin-top: 5%; }
       .blog-posts-container .blog-post-container .blog-post .blog-post-date {
         color: #969696;
         font-size: 0.9em; }

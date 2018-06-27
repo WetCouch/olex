@@ -7,6 +7,7 @@
 		<h2>
 			<a class="blog-post-title" href="/blog/post/{{ post.slug }}">{{ post.title }}</a>
 		</h2>
+		<hr class="blog-post-line">
 		<p class="blog-post-date text-muted">
 			{% if post.publishedDate %}
 				<br>{{ post._.publishedDate.format("DD.MM.YYYY") }}

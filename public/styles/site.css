@@ -115,6 +115,9 @@ body {
         margin-top: 5%;
         margin-bottom: 10%; }
 
+body {
+  overflow-x: hidden; }
+
 #tiles {
   display: flex;
   flex-direction: row;
@@ -148,44 +151,53 @@ body {
           width: 100%;
           height: 100%;
           filter: blur(0.12vw); }
-        #tiles .container .tile-container .overflow-hidden .tile1 {
+        #tiles .container .tile-container .overflow-hidden .tile-1 {
           background-image: url("/images/tile1.jpg");
-          background-size: 72vw,  cover;
+          background-size: 72vw, cover;
           background-position: -8vw -1.5vw; }
-        #tiles .container .tile-container .overflow-hidden .tile2 {
-          background-image: url("/images/tile4.jpg");
+        #tiles .container .tile-container .overflow-hidden .tile-2 {
+          background-image: url("/images/tile2.jpg");
           background-size: 60vw, cover;
           background-position: -10vw -1vw; }
-        #tiles .container .tile-container .overflow-hidden .tile3 {
+        #tiles .container .tile-container .overflow-hidden .tile-3 {
           background-image: url("/images/tile3.jpg");
           background-size: 80vw, cover;
           background-position: -16vw -4vw; }
-        #tiles .container .tile-container .overflow-hidden .tile4 {
-          background-image: url("/images/tile2.jpg");
+        #tiles .container .tile-container .overflow-hidden .tile-4 {
+          background-image: url("/images/tile4.jpg");
           background-size: 80vw, cover;
           background-position: -24.5vw -7vw; }
       #tiles .container .tile-container .tile-box {
         position: absolute;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         width: 54%;
         height: 45%;
         z-index: 2;
         text-align: center;
         border-radius: 5%;
         background-color: #ffffff; }
+        #tiles .container .tile-container .tile-box object {
+          margin-top: 10%;
+          height: 25%;
+          width: 25%; }
         #tiles .container .tile-container .tile-box p {
-          margin: 0 10% 10% 10%; }
+          margin: 0 10% 10% 10%;
+          color: #888;
+          font-size: 0.9em;
+          letter-spacing: 0.8px;
+          line-height: 14px; }
         #tiles .container .tile-container .tile-box h3 {
-          margin: 0 10% 10% 10%; }
+          margin: 10% 10% 5% 10%;
+          font-size: 1.05em;
+          font-weight: 700; }
 
 #about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: auto; }
+  width: 100%; }
   #about .about-section, #about .about-section-reverse {
     display: flex;
     flex-direction: row;
@@ -201,13 +213,16 @@ body {
       text-align: center;
       width: 50%; }
       #about .about-section .about-sidetitle-container .about-sidetitle, #about .about-section-reverse .about-sidetitle-container .about-sidetitle {
-        margin: auto; }
-      #about .about-section .about-sidetitle-container hr, #about .about-section-reverse .about-sidetitle-container hr {
-        width: 60px;
-        border: none;
-        border: 1px solid blue;
-        border-radius: 5px;
-        margin-top: 1%; }
+        margin: auto;
+        font-weight: 400;
+        font-size: 2.2em;
+        letter-spacing: 0.12em; }
+        #about .about-section .about-sidetitle-container .about-sidetitle hr, #about .about-section-reverse .about-sidetitle-container .about-sidetitle hr {
+          width: 2.9em;
+          border: none;
+          border: 1px solid #00A0FF;
+          border-radius: 5px;
+          margin-top: 0.3em; }
     #about .about-section .about-sidetext-container, #about .about-section-reverse .about-sidetext-container {
       display: flex;
       flex-direction: column;
@@ -216,20 +231,24 @@ body {
       width: 50%; }
       #about .about-section .about-sidetext-container .about-paragraph, #about .about-section-reverse .about-sidetext-container .about-paragraph {
         text-align: justify;
-        width: 70%; }
+        width: 70%;
+        color: #333;
+        letter-spacing: 0.1em;
+        line-height: 1.4em;
+        font-size: 1.3em; }
   #about .about-section-reverse {
     flex-direction: row-reverse; }
   #about .big-bar {
     width: 60%;
     border: none;
-    border: solid 2px blue;
+    border: solid 2px #00A0FF;
     border-radius: 10px;
     margin-top: 10%; }
 
 #contact {
   display: flex;
   flex-direction: column;
-  width: 100vw; }
+  width: 100%; }
   #contact .contact-container {
     display: flex;
     flex-direction: row;
@@ -238,14 +257,18 @@ body {
     width: 90%;
     margin-top: 10%; }
     #contact .contact-container .contact-title-container {
-      text-align: center;
-      width: 50%; }
+      margin: auto;
+      font-weight: 400;
+      letter-spacing: 0.12em; }
+      #contact .contact-container .contact-title-container .contact-title {
+        font-size: 2.2em;
+        font-weight: 400; }
       #contact .contact-container .contact-title-container hr {
-        width: 60px;
+        width: 2.9em;
         border: none;
-        border: 1px solid blue;
+        border: 1px solid #00A0FF;
         border-radius: 5px;
-        margin-top: -1.5%; }
+        margin-top: 0.3em; }
     #contact .contact-container .contact-info-container {
       text-align: center;
       line-height: 1.6em;
@@ -253,6 +276,141 @@ body {
       #contact .contact-container .contact-info-container .contact-bold {
         white-space: nowrap;
         font-weight: 700; }
+
+/* hides the paragraphs in tiles for smaller desktops and tablets */
+@media only screen and (min-width: 480px) and (max-width: 1080px) {
+  #tiles .container .tile-container .overflow-hidden {
+    width: 95%;
+    height: 95%; }
+    #tiles .container .tile-container .overflow-hidden .tile-1 {
+      background-size: 75.96vw, cover;
+      background-position: -8.44vw -1.5825vw;
+      filter: blur(0.15vw); }
+    #tiles .container .tile-container .overflow-hidden .tile-2 {
+      background-size: 63.3vw, cover;
+      background-position: -10.55vw -1.055vw;
+      filter: blur(0.15vw); }
+    #tiles .container .tile-container .overflow-hidden .tile-3 {
+      background-size: 84.4vw, cover;
+      background-position: -16.88vw -4.22vw;
+      filter: blur(0.15vw); }
+    #tiles .container .tile-container .overflow-hidden .tile-4 {
+      background-size: 84.4vw, cover;
+      background-position: -25.8475vw -7.385vw;
+      filter: blur(0.15vw); }
+  #tiles .container .tile-container .tile-box p {
+    display: none; }
+  #tiles .container .tile-container .tile-box object {
+    margin-top: 20%; } }
+
+/* changes text layout to a single column for tablets */
+@media only screen and (min-width: 480px) and (max-width: 819px) {
+  #about .about-section, #about .about-section-reverse {
+    flex-direction: column;
+    margin: none; }
+    #about .about-section .about-sidetitle-container, #about .about-section .about-sidetext-container, #about .about-section-reverse .about-sidetitle-container, #about .about-section-reverse .about-sidetext-container {
+      width: 90%; }
+      #about .about-section .about-sidetitle-container .about-paragraph, #about .about-section .about-sidetext-container .about-paragraph, #about .about-section-reverse .about-sidetitle-container .about-paragraph, #about .about-section-reverse .about-sidetext-container .about-paragraph {
+        width: 90%;
+        letter-spacing: none;
+        font-size: 1.1em; }
+    #about .about-section .about-sidetitle-container, #about .about-section-reverse .about-sidetitle-container {
+      height: 50vh; }
+      #about .about-section .about-sidetitle-container .about-sidetitle, #about .about-section-reverse .about-sidetitle-container .about-sidetitle {
+        margin: none; }
+  #about .big-bar {
+    display: none; }
+  #contact {
+    justify-content: center;
+    align-items: center; }
+    #contact .contact-container {
+      flex-direction: column;
+      margin: none; }
+      #contact .contact-container .contact-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50vh; }
+        #contact .contact-container .contact-title-container .contact-title {
+          margin: none; }
+      #contact .contact-container .contact-info-container {
+        width: 100%;
+        font-size: 0.8em; } }
+
+/* puts the tiles in a single column and does some cosmetic changes to the text for phones */
+@media only screen and (max-width: 479px) {
+  #tiles {
+    width: 100%;
+    height: 294vw; }
+    #tiles .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr; }
+      #tiles .container .tile-container .overflow-hidden {
+        width: 100%;
+        height: 100%;
+        border-bottom: solid 1.5px white;
+        border-top: solid 1.5px white; }
+        #tiles .container .tile-container .overflow-hidden .tile-1 {
+          background-size: 159.84vw, cover;
+          background-position: -17.76vw -3.33vw;
+          filter: blur(0.3vw); }
+        #tiles .container .tile-container .overflow-hidden .tile-2 {
+          background-size: 133.2vw, cover;
+          background-position: -22.2vw -2.22vw;
+          filter: blur(0.3vw); }
+        #tiles .container .tile-container .overflow-hidden .tile-3 {
+          background-size: 177.6vw, cover;
+          background-position: -35.52vw -8.88vw;
+          filter: blur(0.3vw); }
+        #tiles .container .tile-container .overflow-hidden .tile-4 {
+          background-size: 177.6vw, cover;
+          background-position: -54.39vw -15.54vw;
+          filter: blur(0.3vw); }
+      #tiles .container .tile-container .tile-box {
+        width: 60%;
+        height: 40%;
+        border: solid 0.5px #00A0FF; }
+        #tiles .container .tile-container .tile-box object {
+          height: 30%;
+          width: 30%;
+          margin-top: 8%; }
+        #tiles .container .tile-container .tile-box p {
+          display: none;
+          font-size: 0.65em; }
+  #about .about-section, #about .about-section-reverse {
+    flex-direction: column;
+    margin: none; }
+    #about .about-section .about-sidetitle-container, #about .about-section .about-sidetext-container, #about .about-section-reverse .about-sidetitle-container, #about .about-section-reverse .about-sidetext-container {
+      width: 90%; }
+      #about .about-section .about-sidetitle-container .about-paragraph, #about .about-section .about-sidetext-container .about-paragraph, #about .about-section-reverse .about-sidetitle-container .about-paragraph, #about .about-section-reverse .about-sidetext-container .about-paragraph {
+        width: 90%;
+        letter-spacing: none;
+        font-size: 1em; }
+    #about .about-section .about-sidetitle-container, #about .about-section-reverse .about-sidetitle-container {
+      height: 110vh; }
+      #about .about-section .about-sidetitle-container .about-sidetitle, #about .about-section-reverse .about-sidetitle-container .about-sidetitle {
+        line-height: 1.3em;
+        margin: none; }
+  #about .big-bar {
+    display: none; }
+  #contact {
+    justify-content: center;
+    align-items: center; }
+    #contact .contact-container {
+      flex-direction: column;
+      margin: none; }
+      #contact .contact-container .contact-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 110vh; }
+        #contact .contact-container .contact-title-container .contact-title {
+          margin: none; }
+      #contact .contact-container .contact-info-container {
+        width: 100%;
+        font-size: 0.8em; } }
 
 .post-container .post-image {
   width: 100%; }

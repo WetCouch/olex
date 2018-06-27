@@ -172,6 +172,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
         width: 54%;
         height: 45%;
         z-index: 2;
@@ -179,19 +180,22 @@ body {
         border-radius: 5%;
         background-color: #ffffff; }
         #tiles .container .tile-container .tile-box object {
-          margin-top: 10%;
+          margin: 0;
+          margin-top: 2.5vw;
           height: 25%;
           width: 25%; }
-        #tiles .container .tile-container .tile-box p {
-          margin: 0 10% 10% 10%;
-          color: #888;
-          font-size: 0.9em;
-          letter-spacing: 0.8px;
-          line-height: 14px; }
         #tiles .container .tile-container .tile-box h3 {
-          margin: 10% 10% 5% 10%;
-          font-size: 1.05em;
+          margin: 0;
+          margin-top: 2.5vw;
+          font-size: 1.4vw;
           font-weight: 700; }
+        #tiles .container .tile-container .tile-box p {
+          text-align: center;
+          margin: 0;
+          margin-top: 1.8vw;
+          color: #888;
+          font-size: 1.05vw;
+          line-height: 1.4vw; }
 
 #about {
   display: flex;
@@ -298,10 +302,16 @@ body {
       background-size: 84.4vw, cover;
       background-position: -25.8475vw -7.385vw;
       filter: blur(0.15vw); }
-  #tiles .container .tile-container .tile-box p {
-    display: none; }
   #tiles .container .tile-container .tile-box object {
-    margin-top: 20%; } }
+    margin-top: 20%;
+    height: 30%;
+    width: 30%; }
+  #tiles .container .tile-container .tile-box h3 {
+    margin: 10% 10% 5% 10%;
+    font-size: 1.05em;
+    font-weight: 700; }
+  #tiles .container .tile-container .tile-box p {
+    display: none; } }
 
 /* changes text layout to a single column for tablets */
 @media only screen and (min-width: 480px) and (max-width: 819px) {
@@ -372,12 +382,15 @@ body {
         height: 40%;
         border: solid 0.5px #00A0FF; }
         #tiles .container .tile-container .tile-box object {
-          height: 30%;
-          width: 30%;
+          height: 35%;
+          width: 35%;
           margin-top: 8%; }
+        #tiles .container .tile-container .tile-box h3 {
+          margin: 10% 10% 5% 10%;
+          font-size: 1.05em;
+          font-weight: 700; }
         #tiles .container .tile-container .tile-box p {
-          display: none;
-          font-size: 0.65em; }
+          display: none; }
   #about .about-section, #about .about-section-reverse {
     flex-direction: column;
     margin: none; }

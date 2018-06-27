@@ -32,10 +32,17 @@
 		{% block head %}{% endblock %}
 	</head>
 	<body>
-
+<!-- {{'white' if section == blog else ''}} -->
 		{# HEADER #}
 		<div id="header" class="container">
-
+			<nav class="nav">
+				<ul class="nav-link-list">
+					<li class="nav-link-container"><a href="/" class="{% if section == "post" %} white {% endif %} nav-link">O firmie</a></li>
+					<li class="nav-link-container"><a href="/blog" class="nav-link">Aktualności</a></li>
+					<li class="nav-link-container"><a href="/realizacje" class="nav-link">Realizacje</a></li>
+					<li class="nav-link-container"><a href="/kontakt" class="nav-link">Kontakt</a></li>
+				</ul>
+			</nav>
 		</div>
 
 		{# BODY #}
@@ -58,8 +65,7 @@
 
 		{# FOOTER #}
 		<div id="footer" class="container">
-			{# You don"t _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it! #}
-			<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+			
 		</div>
 
 

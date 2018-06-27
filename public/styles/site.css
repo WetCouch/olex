@@ -77,12 +77,34 @@ body {
   max-width: 100%;
   height: auto; }
 
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 0; }
+  #header .nav .nav-link-list {
+    float: right;
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%; }
+    #header .nav .nav-link-list .nav-link-container {
+      display: inline-block;
+      margin-right: 5%; }
+      #header .nav .nav-link-list .nav-link-container .nav-link {
+        text-decoration: none;
+        color: #252628;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 1.1em; }
+      #header .nav .nav-link-list .nav-link-container .white {
+        color: blue; }
+
 .blog-posts-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 90%;
-  margin: 5% auto; }
+  margin: 7% auto; }
   .blog-posts-container .blog-post-container {
     display: flex;
     justify-content: center;
@@ -124,6 +146,7 @@ body {
   overflow-x: hidden; }
 
 #tiles {
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;

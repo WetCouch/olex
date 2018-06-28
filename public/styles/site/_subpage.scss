@@ -1,0 +1,188 @@
+$tile-photos: url("/images/tile1.jpg") url("/images/tile2.jpg") url("/images/tile3.jpg");
+$tile-sizes: 40vw 33vw 39vw;
+$tile-pos-x: -4vw 0vw -2vw;
+$tile-pos-y: -2vw -1vw -3vw; 
+body{
+    overflow-x: hidden;
+}
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55vw;
+    background-image: url('../images/tile2.jpg');
+    background-size: 100vw auto, cover;
+    background-position: 0 -6vw;
+
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        .title-title{
+            font-size: 4em;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: white;
+        }
+        .title-description {
+            margin: 2.5vw 1vw auto 1vw;
+            font-size: 1.5em;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: white;
+        }
+        .title-button{
+            padding: 19px 70px 19px 70px;
+            margin-top: 3.5vw;
+            border-radius: 40px;
+            background-color: white;
+            color: $altBlue;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+    }
+}
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    width: 100vw;
+    text-align:center;
+
+    p {
+        margin: auto 15vw auto 15vw;
+        font-size: 2.8em;
+    }
+}
+#sub-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto 2vw auto 2vw;
+
+        .tile-container{
+            display: flex;
+            flex-direction: column;
+
+            @for $i from 1 through 3 {
+                .tile-#{$i}{
+                    background-image: nth($tile-photos, $i);
+                    background-size: (nth($tile-sizes, $i)), cover;
+                    background-position: (nth($tile-pos-x, $i)) (nth($tile-pos-y, $i));
+                }
+            }
+            .tile {
+              height: 20vw;
+              width: 29vw;
+              border-radius: 0.5vw;
+            } 
+            .caption {
+                width: 29vw;
+                
+                p {
+                    margin-top: 1vw;
+                    text-justify: left;
+                    font-weight: 700;
+                    font-size: 1.05em;
+                    letter-spacing: 0.08em;
+                    line-height: 1.15em;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 1080px){
+ 
+}
+@media only screen and (min-width: 480px) and (max-width: 819px){
+
+}
+@media only screen and (max-width: 600px) {
+    #title{
+        .title-container{
+            .title-title{
+                font-size: 10.6vw;
+                letter-spacing: 1.6vw;
+            
+            }
+            .title-description {
+                display: none;
+            }
+
+            .title-button {
+                padding: 3.5vw 10vw 3.5vw 10vw;
+                margin-top: 7vw;
+                font-size: 5vw;
+                letter-spacing: 0.5vw;
+            }
+        }
+    }
+    #sub-nav{
+        width: 100%;
+        height: 124.2vw;
+        .container{
+            margin: 0;
+            flex-direction: column;
+            width: 100vw;
+            height: 100%;
+
+            .tile-container{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .tile {
+                    height: 46vw;
+                    width: 100vw;
+                    border-top: 1px solid white;
+                    border-bottom: 1px solid white;
+                
+                }
+                @for $i from 1 through 3 {
+                    .tile-#{$i}{
+                        background-image: nth($tile-photos, $i);
+                        background-size: (nth($tile-sizes, $i)) * 3, cover;
+                        background-position: 0 (nth($tile-pos-y, $i)) * 2.22;
+                    }
+                }
+                .caption{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 41.33vw;
+                    width: 90vw;
+                    margin-left:-2vw;
+
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align:center;
+                        width:68vw;
+                        height: 25vw;
+                        background-color: white;
+                        border-radius: 2vw;
+                        padding: 0 1vw 0 1vw;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

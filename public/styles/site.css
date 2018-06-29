@@ -338,10 +338,12 @@ body {
     margin-top: 20%;
     height: 30%;
     width: 30%; }
-  #tiles .container .tile-container .tile-box h3 {
-    margin: 10% 10% 5% 10%;
-    font-size: 1.05em;
-    font-weight: 700; }
+  #tiles .container .tile-container .tile-box a {
+    margin: 10% 10% 5% 10%; }
+    #tiles .container .tile-container .tile-box a h3 {
+      font-size: 2.4vw;
+      font-weight: 700;
+      letter-spacing: 0.3vw; }
   #tiles .container .tile-container .tile-box p {
     display: none; } }
 
@@ -417,10 +419,12 @@ body {
           height: 35%;
           width: 35%;
           margin-top: 8%; }
-        #tiles .container .tile-container .tile-box h3 {
-          margin: 10% 10% 5% 10%;
-          font-size: 1.05em;
-          font-weight: 700; }
+        #tiles .container .tile-container .tile-box a {
+          margin: 5% 10% 10% 10%; }
+          #tiles .container .tile-container .tile-box a h3 {
+            font-size: 5vw;
+            font-weight: 700;
+            letter-spacing: 0.5vw; }
         #tiles .container .tile-container .tile-box p {
           display: none; }
   #about .about-section, #about .about-section-reverse {

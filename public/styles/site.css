@@ -472,7 +472,7 @@ body {
     width: 100%;
     height: 100%; }
     .post-container .post-image .post-image-layer .post-title {
-      padding-top: 20%;
+      padding-top: 35vh;
       font-size: 2em;
       font-weight: 700;
       text-align: center;

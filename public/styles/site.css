@@ -108,11 +108,11 @@ body {
     height: 15vw; }
     #footer .footer-container h3 {
       text-align: center;
-      font-size: 2.2vw;
+      font-size: 1.5vw;
       letter-spacing: 0.2vw;
       color: #333; }
       #footer .footer-container h3 hr {
-        width: 5.5vw;
+        width: 4vw;
         border: none;
         margin: 0.75vw auto auto auto;
         border-bottom: 0.15vw solid #00A0FF;
@@ -125,7 +125,7 @@ body {
       #footer .footer-container .footer-text-container a {
         text-decoration: none;
         color: #333;
-        font-size: 1.15vw;
+        font-size: 1vw;
         letter-spacing: 0.1vw;
         margin-bottom: 0.5vw; }
   #footer .footer-copyright {
@@ -133,9 +133,17 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 10vw 0 10vw;
-    margin: 8vw 0 4vw 0; }
+    margin: 4vw 0 2vw 0; }
     #footer .footer-copyright p {
-      font-size: 0.8em; }
+      font-size: 1em;
+      letter-spacing: 2px; }
+      #footer .footer-copyright p .footer-heart {
+        color: red;
+        font-size: 1.35vw; }
+      #footer .footer-copyright p .footer-link {
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: #00A0FF; }
 
 @media only screen and (min-width: 1500px) {
   #footer .footer-container h3 {

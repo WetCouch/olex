@@ -66,12 +66,6 @@ body {
 #header {
   margin-top: 30px; }
 
-#footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
-
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -98,6 +92,70 @@ body {
         font-size: 1.1em; }
       #header .nav .nav-link-list .nav-link-container .white {
         color: white; }
+
+#footer {
+  margin-top: 10vw;
+  /* probably gonna need adjusting after adding the logo*/
+  display: flex;
+  flex-direction: column; }
+  #footer .footer-logo {
+    background-image: url("#"); }
+  #footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5vw 10vw;
+    width: 100%;
+    height: 15vw; }
+    #footer .footer-container h3 {
+      text-align: center;
+      font-size: 2.2vw;
+      letter-spacing: 0.2vw;
+      color: #333; }
+      #footer .footer-container h3 hr {
+        width: 5.5vw;
+        border: none;
+        margin: 0.75vw auto auto auto;
+        border-bottom: 0.15vw solid #00A0FF;
+        border-radius: 0.1vw; }
+    #footer .footer-container .footer-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      #footer .footer-container .footer-text-container a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.15vw;
+        letter-spacing: 0.1vw;
+        margin-bottom: 0.5vw; }
+  #footer .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10vw 0 10vw;
+    margin: 8vw 0 4vw 0; }
+    #footer .footer-copyright p {
+      font-size: 0.8em; }
+
+@media only screen and (min-width: 1500px) {
+  #footer .footer-container h3 {
+    font-size: 2.1em; }
+  #footer .footer-container .footer-text-container a {
+    font-size: 1.05em;
+    margin-bottom: 0.5vw; } }
+
+@media only screen and (min-width: 820px) and (max-width: 1080px) {
+  #footer .footer-container h3 {
+    font-size: 2.5vw; }
+  #footer .footer-container .footer-text-container a {
+    font-size: 1.35vw;
+    margin-bottom: 0.75vw; } }
+
+@media only screen and (max-width: 819px) {
+  #footer .footer-container {
+    display: none; }
+  #footer .footer-copyright {
+    padding: 0 2vw 0 2vw; } }
 
 .blog-posts-container {
   display: flex;

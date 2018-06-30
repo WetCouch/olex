@@ -1,0 +1,44 @@
+{% extends "layouts/defaultSubpage.html" %}
+
+{% block title %}
+KLIMATYZACJA
+{% endblock %}
+
+{% block titleDescription %}
+Właściwa klimatyzacja oraz wentylacja to kluczowe czynniki w nowoczesnym i przyjaznym domu.
+{% endblock %}
+
+{% block description %}
+<p>There's no point in designing this section as long as we dont have its actual content.
+</p>
+{% endblock %}
+
+{% block tile1 %}
+KLIMATYZACJA PLACÓWEK MEDYCZNYCH
+{% endblock %}
+
+{% block tile2 %}
+KLIMATYZACJA ZAKŁADÓW PRODUKCYJNYCH
+{% endblock %}
+
+{% block tile3 %}
+KLIMATYZACJA DOMÓW
+{% endblock %}
+
+{% block js %}
+<script>
+    $(document).ready(function() {
+        //set the big background image url
+        $('#title').css("background-image", "url(\"../images/tile2.jpg\")");
+
+        //set the url for the ZOBACZ REALIZACJE button
+        $('.realizacje-button').attr("href", "#");
+        
+        //set urls for the 3 tiles at the end of the page
+        $('.a-1').attr("href", "#");
+        $('.a-2').attr("href", "#");
+        $('.a-3').attr("href", "#");
+
+    });
+</script>
+{% endblock %}

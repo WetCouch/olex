@@ -1,0 +1,44 @@
+{% extends "layouts/defaultSubpage.html" %}
+
+{% block title %}
+WENTYLACJA
+{% endblock %}
+
+{% block titleDescription %}
+Efektywna wentylacja jest niezbędnym czynnikiem zapewniającym zdrowie i dobre samopoczucie osobom przebywającym wewnątrz budynku.
+{% endblock %}
+
+{% block description %}
+<p>There's no point in designing this section as long as we dont have its actual content.
+</p>
+{% endblock %}
+
+{% block tile1 %}
+WENTYLACJA DOMÓW
+{% endblock %}
+
+{% block tile2 %}
+WENTYLACJA ZAKŁADÓW PRODUKCYJNYCH
+{% endblock %}
+
+{% block tile3 %}
+WENTYLACJA BIUR
+{% endblock %}
+
+{% block js %}
+<script>
+    $(document).ready(function() {
+        //set the big background image url
+        $('#title').css("background-image", "url(\"../images/tile4.jpg\")");
+
+        //set the url for the ZOBACZ REALIZACJE button
+        $('.realizacje-button').attr("href", "#");
+        
+        //set urls for the 3 tiles at the end of the page
+        $('.a-1').attr("href", "#");
+        $('.a-2').attr("href", "#");
+        $('.a-3').attr("href", "#");
+
+    });
+</script>
+{% endblock %}

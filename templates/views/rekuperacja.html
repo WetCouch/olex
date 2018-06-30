@@ -1,0 +1,44 @@
+{% extends "layouts/defaultSubpage.html" %}
+
+{% block title %}
+REKUPERACJA
+{% endblock %}
+
+{% block titleDescription %}
+Wentylacja mechaniczna nawiewno-wywiewna z odzyskiem ciepła zapewniająca wymierne korzyści zdrowotne, jak i finansowe.
+{% endblock %}
+
+{% block description %}
+<p>There's no point in designing this section as long as we dont have its actual content.
+</p>
+{% endblock %}
+
+{% block tile1 %}
+REKUPERACJA TAKA
+{% endblock %}
+
+{% block tile2 %}
+REKUPERACJA TROCHE INNA
+{% endblock %}
+
+{% block tile3 %}
+REKUPERACJA DOMÓW
+{% endblock %}
+
+{% block js %}
+<script>
+    $(document).ready(function() {
+        //set the big background image url
+        $('#title').css("background-image", "url(\"../images/tile1.jpg\")");
+
+        //set the url for the ZOBACZ REALIZACJE button
+        $('.realizacje-button').attr("href", "#");
+        
+        //set urls for the 3 tiles at the end of the page
+        $('.a-1').attr("href", "#");
+        $('.a-2').attr("href", "#");
+        $('.a-3').attr("href", "#");
+
+    });
+</script>
+{% endblock %}

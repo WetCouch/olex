@@ -1,0 +1,16 @@
+@import "subpage";
+
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    width: 100vw;
+    text-align:center;
+
+    p {
+        margin: auto 15vw auto 15vw;
+        font-size: 2.8em;
+    }
+}

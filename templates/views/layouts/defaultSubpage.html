@@ -1,0 +1,42 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<section id="title">
+    <div class="title-layer">
+        <div class="title-container">
+            <h1 class="title-title">
+                {% block title %}{% endblock %}
+            </h1>
+            <h3 class="title-description">
+                {% block titleDescription %}{% endblock %}
+            </h3>
+            <div class="title-button"><a class="realizacje-button">ZOBACZ REALIZACJE</a></div>
+        </div>
+    </div>
+</section>
+<section id="description">
+        {% block description%}{% endblock %}
+</section>
+<section id="sub-nav">
+    <div class="container">
+        <div class="tile-container">
+            <a class="a-1"><div class="tile tile-1"></div></a>
+            <h4 class="caption"><p>
+                {% block tile1 %}{% endblock %}
+            </p></h4>        
+        </div>
+        <div class="tile-container">
+            <a class="a-2"><div class="tile tile-2"></div></a>
+            <h4 class="caption"><p>
+                {% block tile2 %}{% endblock %}
+            </p></h4> 
+        </div>
+        <div class="tile-container">
+            <a class="a-3"><div class="tile tile-3"></div></a>
+            <h4 class="caption"><p>
+                {% block tile3 %}{% endblock %}
+            </p></h4> 
+        </div>
+    </div>
+</section>
+{% endblock %}

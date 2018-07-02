@@ -41,6 +41,7 @@ exports = module.exports = function (app) {
 	app.get('/klimatyzacja', routes.views.klimatyzacja);
 	app.get('/wentylacja', routes.views.wentylacja);
 	app.get('/rekuperacja', routes.views.rekuperacja);
+	app.get('/kontakt', routes.views.kontakt);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

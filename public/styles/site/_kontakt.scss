@@ -1,0 +1,32 @@
+@import "subpage";
+
+#title{
+
+    .title-layer{
+
+        .title-container{
+
+            .title-description, .title-button{
+                display: none;
+
+            }
+        }
+    }
+}
+#description{
+
+    .container {
+        text-align:center;
+        font-size: 1.5em;
+        line-height: 1.6em;
+        width: 100%;
+
+        .contact-bold {
+            white-space: nowrap;
+            font-weight: 700;
+        }
+    }
+}
+#sub-nav{
+    display: none;
+}

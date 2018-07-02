@@ -14,17 +14,36 @@
     }
 }
 #description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
-    .container {
+    .contact-container {
+        width: 100%;
         text-align:center;
         font-size: 1.5em;
         line-height: 1.6em;
-        width: 100%;
+        margin: 10vw 0 0 0;       
 
         .contact-bold {
             white-space: nowrap;
             font-weight: 700;
         }
+    }
+    .map-description{
+        text-align:center;
+        font-size: 1.5em;
+        line-height: 1.6em;
+        margin-bottom: 1vw;
+    }
+
+    #map {
+        height: 30vw;
+        width: 45vw;
+        margin-bottom: 5vw;
+        border-radius: 1vw;
+        
     }
 }
 #sub-nav{

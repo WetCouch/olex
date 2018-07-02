@@ -5,7 +5,7 @@ KONTAKT
 {% endblock %}
 
 {% block description %}
-<div class="container">
+<div class="contact-container">
     <span class="contact-bold">PPUH "OLEX" Aleksander Kania</span><br>
     ul. Prosta <br>
     34-300 Żywiec<br>
@@ -21,7 +21,6 @@ KONTAKT
     <span class="contact-bold">e-mail:</span> ppuh.olex@poczta.fm<br>
     <span class="contact-bold">e-mail:</span> biuro@klimatyzacja-olex.pl<br>
     <span class="contact-bold">e-mail:</span> biuro1@klimatyzacja-olex.pl<br>
-    <br>
     <span class="contact-bold">e-mail:</span> pawelpituch@klimatyzacja-olex.pl<br>
     <br>
     <span class="contact-bold">Bank:</span> ING Bank Śląski S.A. O/Żywiec<br>
@@ -30,8 +29,11 @@ KONTAKT
     Zapraszamy do naszej siedziby od<br> poniedziałku do piątku<br>
     w godzinach: <span class="contact-bold">7:00 - 15:00</span><br>
     <br>
-    Znajdujemy się obok urzędu pracy w Żywcu.
+    
+    
 </div>
+<div class="map-description">Znajdujemy się obok urzędu pracy w Żywcu.</div>
+<div id="map"></div>
 {% endblock %}
 
 {% block js %}
@@ -40,5 +42,25 @@ KONTAKT
         //set the big background image url
         $('#title').css("background-image", "url(\"../images/contact.jpg\")");
     });
+</script>
+
+<script>
+
+//MAP SCRIPT
+
+function initMap() {
+
+  var olex = {lat: 49.678469, lng: 19.176861};
+  
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: olex});
+  
+  var marker = new google.maps.Marker({position: olex, map: map});
+}
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE11KL4yiwfjzMiblvHKKBU1tQADEOTZA&callback=initMap">
+    //api key AIzaSyDE11KL4yiwfjzMiblvHKKBU1tQADEOTZA
 </script>
 {% endblock %}

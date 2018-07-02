@@ -45,6 +45,9 @@
                 letter-spacing: 0.1vw;
                 margin-bottom: 0.5vw;
             }
+            a:hover {
+                color: $altBlue;
+            }
         }
     }
     
@@ -68,6 +71,9 @@
                 letter-spacing: 3px;
                 text-decoration: none;
                 color: $altBlue;
+            }
+            .footer-link:hover{
+                text-decoration: underline;
             }
         }
     }

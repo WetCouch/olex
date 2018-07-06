@@ -90,11 +90,14 @@ body {
         color: #252628;
         font-weight: 700;
         letter-spacing: 3px;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        transition: 0.5s; }
+      #header .nav .nav-link-list .nav-link-container .nav-link:hover {
+        color: #00A0FF; }
       #header .nav .nav-link-list .nav-link-container .white {
         color: white; }
       #header .nav .nav-link-list .nav-link-container .active {
-        color: #00A0FF !important; }
+        color: #00A0FF; }
 
 @media only screen and (max-width: 800px) {
   #header {
@@ -208,7 +211,8 @@ body {
     width: 40vw;
     height: 40vw;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    transition: 0.5s; }
     .blog-posts-container .blog-post-container .blog-post {
       background-color: white;
       border-radius: 10px;
@@ -237,6 +241,9 @@ body {
         color: #37393c;
         font-size: 0.9em;
         line-height: 110%; }
+  .blog-posts-container .blog-post-container:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
 
 @media screen and (max-width: 800px) {
   .blog-posts-container {
@@ -312,7 +319,8 @@ body {
         z-index: 2;
         text-align: center;
         border-radius: 5%;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        transition: 0.5s; }
         #tiles .container .tile-container .tile-box object {
           margin: 0;
           margin-top: 2.5vw;
@@ -336,6 +344,9 @@ body {
           line-height: 1.4vw; }
     #tiles .container .tile-container:hover {
       cursor: pointer; }
+      #tiles .container .tile-container:hover .tile-box {
+        width: 65%;
+        height: 55%; }
 
 #about {
   display: flex;

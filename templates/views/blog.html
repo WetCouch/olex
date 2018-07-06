@@ -2,7 +2,7 @@
 
 
 {% macro blogPost(post) %}
-<div class="blog-post-container" style="background-image: url('{{ post._.image.fit(720,576) }}')" data-ks-editable="editable(user, { list: " Post ", id: post.id })">
+<div onclick="location.href='/blog/post/{{ post.slug }}'" class="blog-post-container" style="background-image: url('{{ post._.image.fit(720,576) }}')" data-ks-editable="editable(user, { list: " Post ", id: post.id })">
 	<div class="blog-post">
 		<h2>
 			<a class="blog-post-title" href="/blog/post/{{ post.slug }}">{{ post.title }}</a>

@@ -96,6 +96,21 @@ body {
       #header .nav .nav-link-list .nav-link-container .active {
         color: #00A0FF !important; }
 
+@media only screen and (max-width: 800px) {
+  #header {
+    position: static; }
+    #header .nav .nav-link-list {
+      float: none;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin: 5% auto; }
+      #header .nav .nav-link-list .nav-link-container {
+        margin: 2% 0; }
+        #header .nav .nav-link-list .nav-link-container .nav-link {
+          color: #252628; } }
+
 #footer {
   margin-top: 10vw;
   /* probably gonna need adjusting after adding the logo*/
@@ -170,7 +185,14 @@ body {
   #footer .footer-container {
     display: none; }
   #footer .footer-copyright {
-    padding: 0 2vw 0 2vw; } }
+    padding: 0 2vw 0 2vw;
+    flex-direction: column;
+    text-align: center; }
+    #footer .footer-copyright p {
+      margin-top: 5%;
+      line-height: 150%; }
+      #footer .footer-copyright p .footer-heart {
+        font-size: 5vw; } }
 
 .blog-posts-container {
   display: flex;
@@ -192,12 +214,10 @@ body {
       border-radius: 10px;
       width: 60%;
       padding: 10% 5%;
-      text-align: center;
-      color: #252628; }
+      text-align: center; }
       .blog-posts-container .blog-post-container .blog-post .blog-post-title {
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 1em;
         letter-spacing: 5px;
         font-weight: 700;
         font-size: 1.2em;
@@ -212,9 +232,21 @@ body {
         color: #969696;
         font-size: 0.9em; }
       .blog-posts-container .blog-post-container .blog-post .blog-post-desc {
-        letter-spacing: 3px;
-        margin-top: 5%;
-        margin-bottom: 10%; }
+        margin-top: 7%;
+        margin-bottom: 5%;
+        color: #37393c;
+        font-size: 0.9em;
+        line-height: 110%; }
+
+@media screen and (max-width: 800px) {
+  .blog-posts-container {
+    flex-direction: column;
+    width: 100%; }
+    .blog-posts-container .blog-post-container {
+      width: 100%;
+      height: auto;
+      padding: 10% 0;
+      margin-bottom: 10%; } }
 
 body {
   overflow-x: hidden; }
@@ -1036,9 +1068,12 @@ body {
   .post-container .post-image .post-image-layer {
     background-color: rgba(2, 23, 35, 0.2);
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
     .post-container .post-image .post-image-layer .post-title {
-      padding-top: 35vh;
       font-size: 2em;
       font-weight: 700;
       text-align: center;
@@ -1059,10 +1094,27 @@ body {
       text-align: center;
       color: white;
       letter-spacing: 2px;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      padding: 0 10%; }
 
 .post-container .post-content {
   width: 65%;
   margin: 5% auto;
   letter-spacing: 3px;
   line-height: 140%; }
+  .post-container .post-content p {
+    margin-top: 5%; }
+
+@media screen and (max-width: 800px) {
+  .post-container .post-image .post-image-layer .post-title {
+    padding: 0 5%; }
+  .post-container .post-image .post-image-layer .post-line {
+    width: 30%;
+    border-top: 3px solid #00A0FF;
+    margin: 5% auto; }
+  .post-container .post-image .post-image-layer .post-short {
+    padding: 5% 10%; }
+  .post-container .post-content {
+    width: 85%; }
+    .post-container .post-content p {
+      margin-top: 20%; } }

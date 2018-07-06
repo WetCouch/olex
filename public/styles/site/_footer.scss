@@ -118,7 +118,15 @@
         }
         .footer-copyright {
             padding: 0 2vw 0 2vw;
-
+			flex-direction: column;
+		  	text-align: center;
+		  p {
+			margin-top: 5%;
+			line-height: 150%;
+			.footer-heart {
+			  font-size: 5vw;
+			}
+		  }
         }
     }
 }

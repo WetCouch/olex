@@ -13,9 +13,7 @@
 				<br>{{ post._.publishedDate.format("DD.MM.YYYY") }}
 			{% endif %}
 		</p>
-		<p class="blog-post-desc">{{ post.content.brief|safe }}</p>
-		{% if post.content.extended %}
-		{% endif %}
+		<div class="blog-post-desc">{{ post.content.brief|safe }}</div>
 	</div>
 </div>
 {% endmacro %}

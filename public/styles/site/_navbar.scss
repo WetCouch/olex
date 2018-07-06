@@ -30,3 +30,26 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 800px) {
+  #header {
+	position: static;
+	.nav {
+	  .nav-link-list {
+		float: none;
+		width: 100%;
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		margin: 5% auto;
+		.nav-link-container {
+		  margin: 2% 0;
+		  .nav-link {
+			color: #252628;
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -20,11 +20,9 @@
             width: 60%;
             padding: 10% 5%;
             text-align: center;
-            color: #252628;
             .blog-post-title {
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 1em;
                 letter-spacing: 5px;
                 font-weight: 700;
                 font-size: 1.2em;
@@ -42,10 +40,26 @@
                 font-size: 0.9em;
             }
             .blog-post-desc {
-                letter-spacing: 3px;
-                margin-top: 5%;
-                margin-bottom: 10%;
+                margin-top: 7%;
+                margin-bottom: 5%;
+			  	color: #37393c;
+			  	font-size: 0.9em;
+			  	line-height: 110%;
             }
         }
     }
+}
+
+
+@media screen and (max-width: 800px) {
+  .blog-posts-container {
+	flex-direction: column;
+	width: 100%;
+	.blog-post-container {
+	  width: 100%;
+	  height: auto;
+	  padding: 10% 0;
+	  margin-bottom: 10%;
+	}
+  }
 }

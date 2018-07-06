@@ -9,12 +9,14 @@
             background-color: rgba(2, 23, 35, 0.2);
             width: 100%;
             height: 100%;
-            
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			  
             .post-title {
-                padding-top: 35vh;
                 font-size: 2em;
                 font-weight: 700;
-                // text-transform: uppercase;
                 text-align: center;
                 letter-spacing: 5px;
                 color: white;
@@ -41,6 +43,7 @@
                 color: white;
                 letter-spacing: 2px;
                 font-size: 1.2em;
+			  	padding: 0 10%;
             }
         }
     }
@@ -49,5 +52,36 @@
         margin: 5% auto;
         letter-spacing: 3px;
         line-height: 140%;
+	  p {
+		margin-top: 5%;
+	  }
     }
+}
+
+
+@media screen and (max-width: 800px) {
+  .post-container {
+	.post-image {
+	  .post-image-layer {
+		.post-title {
+		  padding: 0 5%;
+		}
+		.post-line {
+		  width: 30%;
+		  border-top: 3px solid $altBlue;
+		  margin: 5% auto;
+		}
+		.post-short {
+		  padding: 5% 10%;
+		}
+	  }
+	}
+	
+	.post-content {
+	  width: 85%;
+	  p {
+		margin-top: 20%;
+	  }
+	}
+  }
 }

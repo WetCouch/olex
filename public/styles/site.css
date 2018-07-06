@@ -177,7 +177,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 90%;
-  margin: 10% auto; }
+  margin: 10% auto;
+  min-height: 80vh; }
   .blog-posts-container .blog-post-container {
     display: flex;
     justify-content: center;
@@ -299,8 +300,10 @@ body {
           margin: 0;
           margin-top: 1.8vw;
           color: #888;
-          font-size: 1.05vw;
+          font-size: 1.1vw;
           line-height: 1.4vw; }
+    #tiles .container .tile-container:hover {
+      cursor: pointer; }
 
 #about {
   display: flex;

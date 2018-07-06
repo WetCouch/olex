@@ -37,10 +37,11 @@
 		<div id="header" class="container">
 			<nav class="nav">
 				<ul class="nav-link-list">
-					<li class="nav-link-container"><a href="/" class="{% if section == "post" or section == "subpage" %} white {% endif %} nav-link">O firmie</a></li>
-					<li class="nav-link-container"><a href="/blog" class="{% if section == "post" or section == "subpage" %} white {% endif %}nav-link">Aktualności</a></li>
-					<li class="nav-link-container"><a href="/realizacje" class="{% if section == "post" or section == "subpage" %} white {% endif %}nav-link">Realizacje</a></li>
-					<li class="nav-link-container"><a href="/kontakt" class="{% if section == "post" or section == "subpage" %} white {% endif %}nav-link">Kontakt</a></li>
+					{% for link in navLinks %}
+						<li class="nav-link-container">
+							<a href="{{ link.href }}" class="{% if section == "post" or section == "subpage" or section == "kontakt" %} white {% endif %} {% if section == link.key %} active {% endif %} nav-link">{{ link.label }}</a>
+						</li>
+					{% endfor %}
 				</ul>
 			</nav>
 		</div>

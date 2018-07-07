@@ -37,7 +37,7 @@ exports = module.exports = function (app) {
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
-	app.get('/gallery', routes.views.gallery);
+	app.get('/realizacje', routes.views.gallery);
 	app.get('/klimatyzacja', routes.views.klimatyzacja);
 	app.get('/wentylacja', routes.views.wentylacja);
 	app.get('/rekuperacja', routes.views.rekuperacja);

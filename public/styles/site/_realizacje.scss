@@ -50,10 +50,14 @@
 		justify-content: center;
 		.gallery-image {
 		  padding: 5%;
+		  transition: 0.5s;
 		  .image-crop {
 			object-fit: cover;
 			@include space-out(1, 20);
 		  }
+		}
+		.gallery-image:hover {
+		  transform: scale(1.15);
 		}
 	  }
 	}

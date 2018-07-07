@@ -345,8 +345,7 @@ body {
     #tiles .container .tile-container:hover {
       cursor: pointer; }
       #tiles .container .tile-container:hover .tile-box {
-        width: 65%;
-        height: 55%; }
+        transform: scale(1.15); }
 
 #about {
   display: flex;

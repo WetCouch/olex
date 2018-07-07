@@ -102,8 +102,7 @@ body {
 	  .tile-container:hover {
 		cursor: pointer;
 		.tile-box {
-		  width: 65%;
-		  height: 55%;
+		  transform: scale(1.15);
 		}
 	  }
     }

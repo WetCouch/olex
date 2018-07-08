@@ -66,8 +66,7 @@
 
 		{# FOOTER #}
 		<div id="footer" class="container">
-			<div class="footer-logo">
-			</div>
+			<object class="footer-logo" type="image/svg+xml" data="../images/logo-dark.svg"></object>
 			<div class="footer-container">
 
 				<h3 class="footer-title">LINKI<hr></h3>
@@ -77,31 +76,32 @@
 
 				<div class="footer-text-container">
 					
-					<a href="https://www.lg.com/pl/klimatyzacja">LG Electronics Inc.</a>
-					<a href="https://www.sharp.pl/cps/rde/xchg/pl/">Sharp</a>
-					<a href="http://www.fujitsu.com/pl/">Fujitsu</a>
-					<a href="http://www.toshiba-aircon.co.uk/">Toshiba</a>
-					<a href="https://www.daikin.pl/pl_pl/customers.html">Daikin</a>
+					<a class="footer-link" href="https://www.lg.com/pl/klimatyzacja">LG Electronics Inc.</a>
+					<a class="footer-link" href="https://www.sharp.pl/cps/rde/xchg/pl/">Sharp</a>
+					<a class="footer-link" href="http://www.fujitsu.com/pl/">Fujitsu</a>
+					<a class="footer-link" href="http://www.toshiba-aircon.co.uk/">Toshiba</a>
+					<a class="footer-link" href="https://www.daikin.pl/pl_pl/customers.html">Daikin</a>
 				</div>
 				<div class="footer-text-container">
 					
-					<a href="#">Atesty</a>
-					<a href="#">Dokumentacja</a>
-					<a href="#">Gwarancje</a>
-					<a href="#">Instrukcje</a>
-					<a href="#">Cenniki</a>	
+					<a class="footer-link" href="#">Atesty</a>
+					<a class="footer-link" href="#">Dokumentacja</a>
+					<a class="footer-link" href="#">Gwarancje</a>
+					<a class="footer-link" href="#">Instrukcje</a>
+					<a class="footer-link" href="#">Cenniki</a>	
 				</div>
 				<div class="footer-text-container">
 					
-					<a href="/">O firmie</a>
-					<a href="/klimatyzacja">Klimatyzacja</a>
-					<a href="/wentylacja">Wentylacja</a>
-					<a href="/rekuperacja">Rekuperacja</a>
-					<a href="/kontakt">Kontakt</a>
+					<a class="footer-link" href="/">O firmie</a>
+					<a class="footer-link" href="/klimatyzacja">Klimatyzacja</a>
+					<a class="footer-link" href="/wentylacja">Wentylacja</a>
+					<a class="footer-link" href="/rekuperacja">Rekuperacja</a>
+					<a class="footer-link" href="/kontakt">Kontakt</a>
 				</div>
 				<div class="footer-text-container">
-					
-					<div class="footer-rf-logo"></div>
+					<a class="footer-image-link" href="http://wizytowka.rzetelnafirma.pl/5VR1ILN7/1">
+						<img class="footer-rf-logo" src="images/rzetelna.jpg"/>
+					</a>
 				</div>
 			</div>
 			<div class="footer-copyright">
@@ -131,6 +131,7 @@
 		{# Add scripts that are globally required by your site here. #}
 
 		{# Include template-specific javascript files by extending the js block #}
-		{% block js %}{% endblock %}
+		{% block js %}
+		{% endblock %}
 	</body>
 </html>

@@ -1,15 +1,10 @@
-{% extends "layouts/default.html" %}
+{% extends "layouts/defaultSubpage.html" %}
 
-{% block content %}
-<section id="title">
-    <div class="title-layer">
-        <div class="title-container">
-            <h1 class="title-title">KONTAKT</h1>
-        
-        </div>
-    </div>
-</section>
-<section id="description">
+{% block title %}
+KONTAKT
+{% endblock %}
+
+{% block description %}
 <div class="contact-container">
     <span class="contact-bold">PPUH "OLEX" Aleksander Kania</span><br>
     ul. Prosta <br>
@@ -38,9 +33,7 @@
     
 </div>
 <div class="map-description">Znajdujemy się obok urzędu pracy w Żywcu.</div>
-<div id="map"></div>        
-</section>
-
+<div id="map"></div>
 {% endblock %}
 
 {% block js %}

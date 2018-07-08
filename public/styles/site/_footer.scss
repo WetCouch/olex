@@ -5,7 +5,7 @@
     
     .footer-logo{
         width: 35%;
-        margin: 5vw 0 5vw 0;
+        margin: 5vw 0 -2vw 0;
 
     }
     .footer-container {       
@@ -66,7 +66,8 @@
     .footer-copyright{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 100%;
         padding: 0 10vw 0 10vw;
         margin: 4vw 0 2vw 0;
 
@@ -137,17 +138,20 @@
     #footer{
         .footer-logo{
             width: 80%;
-            margin: 2vw 0 2vw 0;
+            margin: 2vw 0 -10vw 0;
         }
         .footer-container{
             display: none;
+            
         }
         .footer-copyright {
+            flex-direction: column-reverse;
             padding: 0 2vw 0 2vw;
-			flex-direction: column;
-		  	text-align: center;
+            text-align: center;
+			
+              
 		  p {
-			margin-top: 5%;
+            margin-top: 5%;
 			line-height: 150%;
 			.footer-heart {
 			  font-size: 5vw;

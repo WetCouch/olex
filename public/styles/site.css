@@ -125,7 +125,7 @@ body {
   align-items: center; }
   #footer .footer-logo {
     width: 35%;
-    margin: 5vw 0 5vw 0; }
+    margin: 5vw 0 -2vw 0; }
   #footer .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -165,7 +165,8 @@ body {
   #footer .footer-copyright {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
     padding: 0 10vw 0 10vw;
     margin: 4vw 0 2vw 0; }
     #footer .footer-copyright p {
@@ -204,12 +205,12 @@ body {
 @media only screen and (max-width: 819px) {
   #footer .footer-logo {
     width: 80%;
-    margin: 2vw 0 2vw 0; }
+    margin: 2vw 0 -10vw 0; }
   #footer .footer-container {
     display: none; }
   #footer .footer-copyright {
+    flex-direction: column-reverse;
     padding: 0 2vw 0 2vw;
-    flex-direction: column;
     text-align: center; }
     #footer .footer-copyright p {
       margin-top: 5%;
@@ -607,7 +608,6 @@ body {
 #title {
   width: 100%;
   height: 55vw;
-  background-image: url("../images/tile2.jpg");
   background-size: 100vw auto, cover;
   background-position: 0 -6vw; }
   #title .title-layer {
@@ -642,7 +642,7 @@ body {
         background-color: white;
         font-weight: 700;
         font-size: 1.1em; }
-        #title .title-layer .title-container .title-button .realizacje-button {
+        #title .title-layer .title-container .title-button .realizacjeButton {
           text-decoration: none;
           color: #00A0FF; }
 
@@ -764,7 +764,6 @@ body {
 #title {
   width: 100%;
   height: 55vw;
-  background-image: url("../images/tile2.jpg");
   background-size: 100vw auto, cover;
   background-position: 0 -6vw; }
   #title .title-layer {
@@ -799,7 +798,7 @@ body {
         background-color: white;
         font-weight: 700;
         font-size: 1.1em; }
-        #title .title-layer .title-container .title-button .realizacje-button {
+        #title .title-layer .title-container .title-button .realizacjeButton {
           text-decoration: none;
           color: #00A0FF; }
 
@@ -921,7 +920,7 @@ body {
 #title {
   width: 100%;
   height: 55vw;
-  background-image: url("../images/tile2.jpg");
+  background-image: url("/images/kontakt.jpg");
   background-size: 100vw auto, cover;
   background-position: 0 -6vw; }
   #title .title-layer {
@@ -943,125 +942,6 @@ body {
         font-weight: 700;
         letter-spacing: 0.15em;
         color: white; }
-      #title .title-layer .title-container .title-description {
-        margin: 2.5vw 1vw auto 1vw;
-        font-size: 1.5em;
-        font-weight: 400;
-        letter-spacing: 0.05em;
-        color: white; }
-      #title .title-layer .title-container .title-button {
-        padding: 19px 70px 19px 70px;
-        margin-top: 3.5vw;
-        border-radius: 40px;
-        background-color: white;
-        font-weight: 700;
-        font-size: 1.1em; }
-        #title .title-layer .title-container .title-button .realizacje-button {
-          text-decoration: none;
-          color: #00A0FF; }
-
-#sub-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  #sub-nav .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto 2vw auto 2vw; }
-    #sub-nav .container .tile-container {
-      display: flex;
-      flex-direction: column; }
-      #sub-nav .container .tile-container .tile-1 {
-        background-image: url("/images/tile1.jpg");
-        background-size: 40vw, cover;
-        background-position: -4vw -2vw; }
-      #sub-nav .container .tile-container .tile-2 {
-        background-image: url("/images/tile2.jpg");
-        background-size: 33vw, cover;
-        background-position: 0vw -1vw; }
-      #sub-nav .container .tile-container .tile-3 {
-        background-image: url("/images/tile3.jpg");
-        background-size: 39vw, cover;
-        background-position: -2vw -3vw; }
-      #sub-nav .container .tile-container .tile {
-        height: 20vw;
-        width: 29vw;
-        border-radius: 0.5vw; }
-      #sub-nav .container .tile-container .caption {
-        width: 29vw; }
-        #sub-nav .container .tile-container .caption p {
-          margin-top: 1vw;
-          text-justify: left;
-          font-weight: 700;
-          font-size: 1.05em;
-          letter-spacing: 0.08em;
-          line-height: 1.15em; }
-
-@media only screen and (max-width: 600px) {
-  #title .title-layer .title-container .title-title {
-    font-size: 10.6vw;
-    letter-spacing: 1.6vw; }
-  #title .title-layer .title-container .title-description {
-    display: none; }
-  #title .title-layer .title-container .title-button {
-    padding: 3.5vw 10vw 3.5vw 10vw;
-    margin-top: 7vw;
-    font-size: 5vw;
-    letter-spacing: 0.5vw; }
-  #sub-nav {
-    width: 100%;
-    height: 124.2vw; }
-    #sub-nav .container {
-      margin: 0;
-      flex-direction: column;
-      width: 100vw;
-      height: 100%; }
-      #sub-nav .container .tile-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; }
-        #sub-nav .container .tile-container .tile {
-          height: 46vw;
-          width: 100vw;
-          border-top: 1px solid white;
-          border-bottom: 1px solid white; }
-        #sub-nav .container .tile-container .tile-1 {
-          background-image: url("/images/tile1.jpg");
-          background-size: 120vw, cover;
-          background-position: 0 -4.44vw; }
-        #sub-nav .container .tile-container .tile-2 {
-          background-image: url("/images/tile2.jpg");
-          background-size: 99vw, cover;
-          background-position: 0 -2.22vw; }
-        #sub-nav .container .tile-container .tile-3 {
-          background-image: url("/images/tile3.jpg");
-          background-size: 117vw, cover;
-          background-position: 0 -6.66vw; }
-        #sub-nav .container .tile-container .caption {
-          position: absolute;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 41.33vw;
-          width: 90vw;
-          margin-left: -2vw; }
-          #sub-nav .container .tile-container .caption p {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            width: 68vw;
-            height: 25vw;
-            background-color: white;
-            border-radius: 2vw;
-            padding: 0 1vw 0 1vw; } }
-
-#title .title-layer .title-container .title-description, #title .title-layer .title-container .title-button {
-  display: none; }
 
 #description {
   display: flex;
@@ -1088,8 +968,15 @@ body {
     margin-bottom: 5vw;
     border-radius: 1vw; }
 
-#sub-nav {
-  display: none; }
+@media only screen and (max-width: 600px) {
+  #title .title-layer .title-container .title-title {
+    font-size: 10.6vw;
+    letter-spacing: 1.6vw; }
+  #description .contact-container {
+    font-size: 1em; }
+  #description #map {
+    width: 80vw;
+    height: 60vw; } }
 
 .post-container .post-image {
   width: 100%;

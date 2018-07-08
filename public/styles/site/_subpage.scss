@@ -9,7 +9,7 @@ body{
     
     width: 100%;
     height: 55vw;
-    background-image: url('../images/tile2.jpg');
+   
     background-size: 100vw auto, cover;
     background-position: 0 -6vw;
 
@@ -50,7 +50,7 @@ body{
                 font-weight: 700;
                 font-size: 1.1em;
 
-                .realizacje-button {
+                .realizacjeButton {
                     text-decoration: none;
                     color: $altBlue; 
                 }
@@ -101,12 +101,6 @@ body{
             }
         }
     }
-}
-@media only screen and (min-width: 480px) and (max-width: 1080px){
- 
-}
-@media only screen and (min-width: 480px) and (max-width: 819px){
-
 }
 @media only screen and (max-width: 600px) {
     #title{

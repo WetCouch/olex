@@ -1,6 +1,6 @@
 @import "subpage";
 
-#title{
+/*#title{
 
     .title-layer{
 
@@ -12,7 +12,7 @@
             }
         }
     }
-}
+}*/
 #description{
     display: flex;
     flex-direction: column;
@@ -45,7 +45,4 @@
         border-radius: 1vw;
         
     }
-}
-#sub-nav{
-    display: none;
 }

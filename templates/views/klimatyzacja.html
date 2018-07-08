@@ -26,18 +26,21 @@ KLIMATYZACJA DOMÓW
 {% endblock %}
 
 {% block js %}
-<script>
-    $(document).ready(function() {
-        //set the big background image url
-        $('#title').css("background-image", "url(\"../images/tile2.jpg\")");
 
-        //set the url for the ZOBACZ REALIZACJE button
-        $('.realizacje-button').attr("href", "#");
+<script>
+    var bgImage = document.getElementById("title");
+    var realizacje = document.getElementsByClassName("realizacjeButton");
+    var tileLink1 = document.getElementsByClassName("a-1");
+    var tileLink2 = document.getElementsByClassName("a-2");
+    var tileLink3 = document.getElementsByClassName("a-3");
+
+
+    document.addEventListener("DOMContentLoaded", function(event) { 
+    
+        bgImage.style.backgroundImage = "url(\"/images/tile2.jpg\")";
+        realizacje.setAttribute("href", "#");
         
-        //set urls for the 3 tiles at the end of the page
-        $('.a-1').attr("href", "#");
-        $('.a-2').attr("href", "#");
-        $('.a-3').attr("href", "#");
+        
 
     });
 </script>

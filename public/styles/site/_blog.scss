@@ -14,6 +14,7 @@
         height: 40vw;
         background-position: center;
         background-repeat: no-repeat;
+	  	transition: 0.5s;
         .blog-post {
             background-color: white;
             border-radius: 10px;
@@ -48,6 +49,11 @@
             }
         }
     }
+  
+  	.blog-post-container:hover {
+	  cursor: pointer;
+	  transform: scale(1.1);
+	}
 }
 
 

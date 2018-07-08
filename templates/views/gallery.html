@@ -1,46 +1,45 @@
 {% extends "layouts/default.html" %}
 
-{% block intro %}
-	<div class="container">
-		<h1>Gallery</h1>
-	</div>
+{% block css %}
+<link rel="stylesheet" href="/libraries/lightgallery/css/lightgallery.min.css">
 {% endblock %}
 
 {% block content %}
-	<div class="container">
+	<div class="gallery">
 		{% if galleries.length %}
 			{% for gallery in galleries %}
-				<h2>{{ gallery.name }}
-					{% if gallery.publishedDate %}
-						<span class="pull-right text-muted">{{ gallery._.publishedDate.format("Do MMM YYYY") }}</span>
-					{% endif %}
-				</h2>
-
-				<div class="row gallery-images">
-					{% if gallery.heroImage.exists %}
-						<div class="col-sm-4 col-md-4 gallery-image">
-							<img src="{{ gallery._.heroImage.limit(680,680) }}" class="img-rounded">
+				<div class="gallery-container">
+					<div style="background-image: url('{{ gallery._.heroImage.limit(1920,1080) }}')" class="gallery-hero">
+						<!--<img src="{{ gallery._.heroImage.limit(1024,720) }}" class="gallery-hero">-->
+					</div>
+					<div class="gallery-content">
+						<div class="gallery-desc">
+							<h2 class="gallery-title">{{ gallery.name }}</h2>
+					
+							{% if gallery.publishedDate %}
+							<p class="gallery-date">{{ gallery._.publishedDate.format("DD.MM.YYYY") }}</p>
+							{% endif %}
 						</div>
-						<div class="col-sm-8 col-md-8">
-							<div class="row">
+				
+						<div id="lightgallery" class="gallery-images-container">
 								{% for image in gallery.images %}
-									<div class="col-xs-4 col-sm-4 col-md-3 gallery-image">
-										<img src="{{ image.limit(300,300) }}" class="img-rounded">
-									</div>
+									<a href="{{ image.limit(1920,1080) }}" class="gallery-image">
+										<img src="{{ image.limit(400,400) }}" class="image-crop">
+									</a>
 								{% endfor %}
-							</div>
 						</div>
-					{% else %}
-						{% for image in gallery.images %}
-							<div class="col-xs-6 col-sm-4 col-md-3 gallery-image">
-								<img src="{{ image.limit(300,300) }}" class="img-rounded">
-							</div>
-						{% endfor %}
-					{% endif %}
+					</div>
 				</div>
 			{% endfor %}
 		{% else %}
 			<h3 class="text-muted">There are no image galleries yet.</h3>
 		{% endif %}
 	</div>
+{% endblock %}
+
+{% block js %}
+<script src="/libraries/lightgallery/js/lightgallery.min.js"></script>
+<script>
+	lightGallery(document.getElementById('lightgallery'));
+</script>
 {% endblock %}

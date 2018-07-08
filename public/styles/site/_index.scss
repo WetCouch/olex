@@ -65,7 +65,8 @@ body {
                 text-align: center;
                 border-radius: 5%;
                 background-color: #ffffff;
-                
+			  transition: 0.5s;  
+			  
                 object {
                     margin: 0;
                     margin-top: 2.5vw;
@@ -101,6 +102,9 @@ body {
 	  
 	  .tile-container:hover {
 		cursor: pointer;
+		.tile-box {
+		  transform: scale(1.15);
+		}
 	  }
     }
 }

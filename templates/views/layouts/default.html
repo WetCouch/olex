@@ -36,6 +36,7 @@
 		{# HEADER #}
 		<div id="header" class="container">
 			<nav class="nav">
+				<a href="/" class="nav-logo-link"><object class="nav-logo" type="image/svg+xml" data="{% if section == "post" or section == "subpage" or section == "kontakt" %} /images/logo-light.svg {% else %} /images/logo-dark.svg {% endif %}"></object></a>
 				<ul class="nav-link-list">
 					{% for link in navLinks %}
 						<li class="nav-link-container">
@@ -66,7 +67,7 @@
 
 		{# FOOTER #}
 		<div id="footer" class="container">
-			<object class="footer-logo" type="image/svg+xml" data="../images/logo-dark.svg"></object>
+			<object class="footer-logo" type="image/svg+xml" data="/images/logo-dark.svg"></object>
 			<div class="footer-container">
 
 				<h3 class="footer-title">LINKI<hr></h3>

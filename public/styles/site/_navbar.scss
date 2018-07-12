@@ -4,11 +4,20 @@
     z-index: 2;
     top: 0;
     .nav {
+	  	display: flex;
+	  	flex-direction: row;
+	  	justify-content: space-between;
+	  	padding: 0 3%;
+	  	align-items: center;
+	  	.nav-logo-link {
+		  display: inline-block;
+		  .nav-logo {
+			width: 100%;
+			pointer-events: none;
+		  }
+		}
         .nav-link-list {
-            float: right;
             width: 75%;
-            margin-top: 3%;
-            margin-bottom: 5%;
 		  	text-align: right;
             .nav-link-container {
                 display: inline-block;
@@ -40,6 +49,10 @@
   #header {
 	position: static;
 	.nav {
+	  flex-direction: column;
+	  .nav-logo {
+		
+	  }
 	  .nav-link-list {
 		float: none;
 		width: 100%;
@@ -47,6 +60,7 @@
 		text-align: center;
 		flex-direction: column;
 		margin: 5% auto;
+		//border: 1px solid black;
 		.nav-link-container {
 		  margin: 2% 0;
 		  .nav-link {

@@ -427,49 +427,55 @@ body {
         font-size: 1.3em; }
   #about .about-section-reverse {
     flex-direction: row-reverse; }
-  #about .big-bar {
+
+#implementations {
+  margin-top: 15%; }
+  #implementations .implementations-title {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    font-size: 3.5em;
+    font-family: 'Acid-Bold'; }
+    #implementations .implementations-title hr {
+      width: 5em;
+      border: none;
+      border: 2px solid #00A0FF;
+      border-radius: 5px;
+      margin-top: 0.2em; }
+  #implementations .implementations-ifnone {
+    margin-top: 10%;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    font-size: 2em; }
+  #implementations .implementations-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%; }
+    #implementations .implementations-container .implementation {
+      width: 30%;
+      margin-top: 2%; }
+      #implementations .implementations-container .implementation .implementation-subtitle {
+        margin-bottom: 3%;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.05em;
+        letter-spacing: 2px;
+        color: #252628; }
+      #implementations .implementations-container .implementation .implementation-image {
+        transition: 0.5s;
+        object-fit: cover;
+        width: 100%; }
+      #implementations .implementations-container .implementation .implementation-image:hover {
+        transform: scale(1.05); }
+      #implementations .implementations-container .implementation .implementation-image-hidden {
+        display: none; }
+  #implementations .big-bar {
     width: 60%;
     border: none;
     border: solid 2px #00A0FF;
     border-radius: 10px;
     margin-top: 10%; }
-
-#implementations .implementations-title {
-  margin-top: 10%;
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  font-size: 3.5em;
-  font-family: 'Acid-Bold'; }
-
-#implementations .implementations-ifnone {
-  margin-top: 10%;
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  font-size: 2em; }
-
-#implementations .implementations-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5%; }
-  #implementations .implementations-container .implementation {
-    width: 30%; }
-    #implementations .implementations-container .implementation .implementation-subtitle {
-      margin-bottom: 3%;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 1.1em;
-      letter-spacing: 2px; }
-    #implementations .implementations-container .implementation .implementation-image-hidden {
-      display: none; }
-
-#implementations .big-bar {
-  width: 60%;
-  border: none;
-  border: solid 2px #00A0FF;
-  border-radius: 10px;
-  margin-top: 10%; }
 
 #contact {
   display: flex;
@@ -555,6 +561,20 @@ body {
         margin: none; }
   #about .big-bar {
     display: none; }
+  #implementations {
+    margin-top: 25vh; }
+    #implementations .implementations-title hr {
+      width: 4em;
+      border: none;
+      border: 2px solid #00A0FF;
+      border-radius: 5px;
+      margin-top: 0.1em; }
+    #implementations .implementations-container {
+      margin-top: 15vh;
+      flex-direction: column;
+      align-items: center; }
+      #implementations .implementations-container .implementation {
+        width: 60%; }
   #contact {
     justify-content: center;
     align-items: center; }
@@ -634,6 +654,20 @@ body {
         margin: none; }
   #about .big-bar {
     display: none; }
+  #implementations {
+    margin-top: 40vh; }
+    #implementations .implementations-title hr {
+      width: 2em;
+      border: none;
+      border: 2px solid #00A0FF;
+      border-radius: 5px;
+      margin-top: 0.1em; }
+    #implementations .implementations-container {
+      margin-top: 40vh;
+      flex-direction: column;
+      align-items: center; }
+      #implementations .implementations-container .implementation {
+        width: 75%; }
   #contact {
     justify-content: center;
     align-items: center; }

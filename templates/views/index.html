@@ -1,5 +1,9 @@
 {% extends "layouts/default.html" %}
 
+{% block css %}
+<link rel="stylesheet" href="/libraries/lightgallery/css/lightgallery.min.css">
+{% endblock %}
+
 {% block content %}
 	<section id="tiles">
         <div class="container">
@@ -150,6 +154,38 @@
         </div>
         <hr class="big-bar">
     </section>
+
+	<section id="implementations">
+		<h2 class="implementations-title">NASZE OSTATNIE REALIZACJE</h2>
+
+		{% if galleries.length %}
+		<div class="implementations-container">
+		{% for gallery in galleries %}
+			<div class="implementation">
+				<h2 class="implementation-subtitle">{{ gallery.name }}</h2>
+
+				<div id="lightgallery" class="implementation-images-container">
+					{% for image in gallery.images.slice(0, 1) %}
+					<a href="{{ image.limit(1920,1080) }}">
+						<img src="{{ image.limit(400,400) }}">
+					</a>
+					{% endfor %}
+					{% for image in gallery.images.slice(1, gallery.images.length) %}
+					<a href="{{ image.limit(1920,1080) }}" class="implementation-image-hidden">
+						<img src="{{ image.limit(400,400) }}">
+					</a>
+					{% endfor %}
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+		{% else %}
+		<h3 class="implementations-ifnone">Realizacje zostaną wkrótce dodane</h3>
+		{% endif %}
+		
+		<hr class="big-bar">
+	</section>
+
     <section id="contact">
         <div class="contact-container">
             <div class="contact-title-container">
@@ -183,4 +219,11 @@
             </div>
         </div>
     </section>
+{% endblock %}
+
+{% block js %}
+<script src="/libraries/lightgallery/js/lightgallery.min.js"></script>
+<script>
+	lightGallery(document.getElementById('lightgallery'));
+</script>
 {% endblock %}

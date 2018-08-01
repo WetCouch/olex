@@ -127,7 +127,7 @@
 			<div class="implementation">
 				<h2 class="implementation-subtitle">{{ gallery.name }}</h2>
 
-				<div id="lightgallery" class="implementation-images-container">
+				<div id="gallery{{loop.index}}" class="implementation-images-container">
 					{% for image in gallery.images.slice(0, 1) %}
 					<a href="{{ image.limit(1920,1080) }}">
 						<img src="{{ image.limit(400,400) }}" class="implementation-image">
@@ -186,7 +186,12 @@
 
 {% block js %}
 <script src="/libraries/lightgallery/js/lightgallery.min.js"></script>
-<script>
-	lightGallery(document.getElementById('lightgallery'));
+<script type="text/javascript">
+	for (var i = 1; i < 4; i++) {
+		lightGallery(document.getElementById('gallery'+i), {
+			hash: true,
+			galleryId: i
+		});
+	}
 </script>
 {% endblock %}

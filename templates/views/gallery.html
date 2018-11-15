@@ -21,7 +21,7 @@
 							{% endif %}
 						</div>
 				
-						<div id="lightgallery" class="gallery-images-container">
+						<div id="gallery{{loop.index}}" class="gallery-images-container">
 								{% for image in gallery.images %}
 									<a href="{{ image.limit(1920,1080) }}" class="gallery-image">
 										<img src="{{ image.limit(400,400) }}" class="image-crop">
@@ -40,6 +40,11 @@
 {% block js %}
 <script src="/libraries/lightgallery/js/lightgallery.min.js"></script>
 <script>
-	lightGallery(document.getElementById('lightgallery'));
+	for (var i = 1; i <= {{galleries.length}}; i++) {
+		lightGallery(document.getElementById('gallery'+i), {
+			hash: true,
+			galleryId: i
+		});
+	}
 </script>
 {% endblock %}

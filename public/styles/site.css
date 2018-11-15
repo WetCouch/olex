@@ -1127,7 +1127,8 @@ body {
   .gallery .gallery-container {
     display: flex;
     flex-direction: row;
-    margin-top: 10%; }
+    margin-top: 20%;
+    margin-bottom: 10%; }
     .gallery .gallery-container .gallery-hero {
       margin: 0 auto;
       height: 75vh;

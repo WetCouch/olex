@@ -733,6 +733,23 @@ body {
           text-decoration: none;
           color: #00A0FF; }
 
+#description .under-construction {
+  margin-top: 5%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #description .under-construction h1 {
+    font-size: 4em;
+    color: #333; }
+  #description .under-construction .big-bar {
+    width: 60%;
+    border: none;
+    border: solid 2px #00A0FF;
+    border-radius: 10px;
+    margin-top: 5%; }
+
 #sub-nav {
   display: flex;
   flex-direction: column;
@@ -888,6 +905,23 @@ body {
         #title .title-layer .title-container .title-button .realizacjeButton {
           text-decoration: none;
           color: #00A0FF; }
+
+#description .under-construction {
+  margin-top: 5%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #description .under-construction h1 {
+    font-size: 4em;
+    color: #333; }
+  #description .under-construction .big-bar {
+    width: 60%;
+    border: none;
+    border: solid 2px #00A0FF;
+    border-radius: 10px;
+    margin-top: 5%; }
 
 #sub-nav {
   display: flex;

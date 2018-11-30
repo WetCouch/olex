@@ -728,10 +728,14 @@ body {
         border-radius: 40px;
         background-color: white;
         font-weight: 700;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        transition: 0.5s; }
         #title .title-layer .title-container .title-button .realizacjeButton {
           text-decoration: none;
           color: #00A0FF; }
+      #title .title-layer .title-container .title-button:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
 
 #description .under-construction {
   margin-top: 5%;
@@ -901,10 +905,14 @@ body {
         border-radius: 40px;
         background-color: white;
         font-weight: 700;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        transition: 0.5s; }
         #title .title-layer .title-container .title-button .realizacjeButton {
           text-decoration: none;
           color: #00A0FF; }
+      #title .title-layer .title-container .title-button:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
 
 #description .under-construction {
   margin-top: 5%;

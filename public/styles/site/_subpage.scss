@@ -49,12 +49,17 @@ body{
                 background-color: white;  
                 font-weight: 700;
                 font-size: 1.1em;
+			  	transition: 0.5s;
 
                 .realizacjeButton {
                     text-decoration: none;
                     color: $altBlue; 
                 }
             }
+			.title-button:hover {
+			  transform: scale(1.1);
+			  cursor: pointer;
+			}
         }
     }
 }

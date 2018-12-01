@@ -604,43 +604,44 @@ body {
     #tiles .container {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr; }
-      #tiles .container .tile-container .overflow-hidden {
-        width: 100%;
-        height: 100%;
-        border-bottom: solid 1.5px white;
-        border-top: solid 1.5px white; }
-        #tiles .container .tile-container .overflow-hidden .tile-1 {
-          background-size: 159.84vw, cover;
-          background-position: -17.76vw -3.33vw;
-          filter: blur(0.3vw); }
-        #tiles .container .tile-container .overflow-hidden .tile-2 {
-          background-size: 133.2vw, cover;
-          background-position: -22.2vw -2.22vw;
-          filter: blur(0.3vw); }
-        #tiles .container .tile-container .overflow-hidden .tile-3 {
-          background-size: 177.6vw, cover;
-          background-position: -35.52vw -8.88vw;
-          filter: blur(0.3vw); }
-        #tiles .container .tile-container .overflow-hidden .tile-4 {
-          background-size: 177.6vw, cover;
-          background-position: -54.39vw -15.54vw;
-          filter: blur(0.3vw); }
-      #tiles .container .tile-container .tile-box {
-        width: 60%;
-        height: 40%;
-        border: solid 0.5px #00A0FF; }
-        #tiles .container .tile-container .tile-box object {
-          height: 35%;
-          width: 35%;
-          margin-top: 8%; }
-        #tiles .container .tile-container .tile-box a {
-          margin: 5% 10% 10% 10%; }
-          #tiles .container .tile-container .tile-box a h3 {
-            font-size: 5vw;
-            font-weight: 700;
-            letter-spacing: 0.5vw; }
-        #tiles .container .tile-container .tile-box p {
-          display: none; }
+      #tiles .container .tile-container {
+        transform: scale(1.05); }
+        #tiles .container .tile-container .overflow-hidden {
+          width: 100%;
+          height: 100%;
+          border-bottom: solid 5px white;
+          border-top: solid 5px white; }
+          #tiles .container .tile-container .overflow-hidden .tile-1 {
+            background-size: 159.84vw, cover;
+            background-position: -17.76vw -3.33vw;
+            filter: blur(0.3vw); }
+          #tiles .container .tile-container .overflow-hidden .tile-2 {
+            background-size: 133.2vw, cover;
+            background-position: -22.2vw -2.22vw;
+            filter: blur(0.3vw); }
+          #tiles .container .tile-container .overflow-hidden .tile-3 {
+            background-size: 177.6vw, cover;
+            background-position: -35.52vw -8.88vw;
+            filter: blur(0.3vw); }
+          #tiles .container .tile-container .overflow-hidden .tile-4 {
+            background-size: 177.6vw, cover;
+            background-position: -54.39vw -15.54vw;
+            filter: blur(0.3vw); }
+        #tiles .container .tile-container .tile-box {
+          width: 60%;
+          height: 40%; }
+          #tiles .container .tile-container .tile-box object {
+            height: 35%;
+            width: 35%;
+            margin-top: 8%; }
+          #tiles .container .tile-container .tile-box a {
+            margin: 5% 10% 10% 10%; }
+            #tiles .container .tile-container .tile-box a h3 {
+              font-size: 5vw;
+              font-weight: 700;
+              letter-spacing: 0.5vw; }
+          #tiles .container .tile-container .tile-box p {
+            display: none; }
   #about .about-section, #about .about-section-reverse {
     flex-direction: column;
     margin: none; }
@@ -692,6 +693,9 @@ body {
 body {
   overflow-x: hidden; }
 
+#header .nav .nav-logo-mobile {
+  display: none; }
+
 #title {
   width: 100%;
   height: 55vw;
@@ -853,6 +857,12 @@ body {
             background-color: white;
             border-radius: 2vw;
             padding: 0 1vw 0 1vw; } }
+
+@media only screen and (max-width: 800px) {
+  #header .nav .nav-logo-mobile {
+    display: inline-block; }
+  #header .nav .nav-logo-desktop {
+    display: none; } }
 
 #description .container {
   display: flex;
@@ -869,6 +879,9 @@ body {
 body {
   overflow-x: hidden; }
 
+#header .nav .nav-logo-mobile {
+  display: none; }
+
 #title {
   width: 100%;
   height: 55vw;
@@ -1030,6 +1043,12 @@ body {
             background-color: white;
             border-radius: 2vw;
             padding: 0 1vw 0 1vw; } }
+
+@media only screen and (max-width: 800px) {
+  #header .nav .nav-logo-mobile {
+    display: inline-block; }
+  #header .nav .nav-logo-desktop {
+    display: none; } }
 
 #description .container {
   display: flex;

@@ -5,6 +5,15 @@ $tile-pos-y: -2vw -1vw -3vw;
 body{
     overflow-x: hidden;
 }
+
+#header {
+  .nav {
+	.nav-logo-mobile {
+	  display: none;
+	}
+  }
+}
+
 #title {
     
     width: 100%;
@@ -130,6 +139,7 @@ body{
     }
 }
 @media only screen and (max-width: 600px) {
+  
     #title{
         .title-layer{
             .title-container{
@@ -206,4 +216,18 @@ body{
             }
         }
     }
+}
+
+
+@media only screen and (max-width: 800px) {
+  #header {
+	.nav {
+	  .nav-logo-mobile {
+		display: inline-block;
+	  }
+	  .nav-logo-desktop {
+		display: none;
+	  }
+	}
+  }
 }

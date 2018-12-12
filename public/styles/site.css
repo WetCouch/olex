@@ -329,19 +329,23 @@ body {
         #tiles .container .tile-container .overflow-hidden .tile-1 {
           background-image: url("/images/tile1.jpg");
           background-size: 72vw, cover;
-          background-position: -8vw -1.5vw; }
+          background-position: -8vw -1.5vw;
+          transform: scale(1.05); }
         #tiles .container .tile-container .overflow-hidden .tile-2 {
           background-image: url("/images/tile2.jpg");
           background-size: 60vw, cover;
-          background-position: -10vw -1vw; }
+          background-position: -10vw -1vw;
+          transform: scale(1.05); }
         #tiles .container .tile-container .overflow-hidden .tile-3 {
           background-image: url("/images/tile3.jpg");
           background-size: 80vw, cover;
-          background-position: -16vw -4vw; }
+          background-position: -16vw -4vw;
+          transform: scale(1.05); }
         #tiles .container .tile-container .overflow-hidden .tile-4 {
           background-image: url("/images/tile4.jpg");
           background-size: 80vw, cover;
-          background-position: -24.5vw -7vw; }
+          background-position: -24.5vw -7vw;
+          transform: scale(1.05); }
       #tiles .container .tile-container .tile-box {
         position: absolute;
         display: flex;

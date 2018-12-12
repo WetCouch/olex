@@ -50,6 +50,8 @@ body {
                         background-image: nth($tile-photos, $i);
                         background-size: nth($tile-sizes, $i), cover;
                         background-position: nth($tile-pos-x, $i) nth($tile-pos-y, $i);
+					  	transform: scale(1.05);
+					  
                     }
                 }               
             }
@@ -434,9 +436,9 @@ body {
 
                     @for $i from 1 through 4 {
                         .tile-#{$i}{
-                        background-size: (nth($tile-sizes, $i)) * 2.22, cover;
-                        background-position: (nth($tile-pos-x, $i)) * 2.22  (nth($tile-pos-y, $i)) * 2.22;
-                        filter: blur(0.3vw);
+						  background-size: (nth($tile-sizes, $i)) * 2.22, cover;
+						  background-position: (nth($tile-pos-x, $i)) * 2.22  (nth($tile-pos-y, $i)) * 2.22;
+						  filter: blur(0.3vw);
                         }
                     }   
                     

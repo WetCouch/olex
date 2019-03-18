@@ -148,12 +148,17 @@
             padding: 0 2vw 0 2vw;
             text-align: center;
 			
+		  #footer-creators {
+			width: 80%;
+			letter-spacing: 1px;
+			margin: 0 auto;
+		  }
               
 		  p {
             margin-top: 5%;
 			line-height: 150%;
 			.footer-heart {
-			  font-size: 5vw;
+			  font-size: 3.5vw;
 			}
 		  }
         }

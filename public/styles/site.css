@@ -225,11 +225,15 @@ body {
     flex-direction: column-reverse;
     padding: 0 2vw 0 2vw;
     text-align: center; }
+    #footer .footer-copyright #footer-creators {
+      width: 80%;
+      letter-spacing: 1px;
+      margin: 0 auto; }
     #footer .footer-copyright p {
       margin-top: 5%;
       line-height: 150%; }
       #footer .footer-copyright p .footer-heart {
-        font-size: 5vw; } }
+        font-size: 3.5vw; } }
 
 .blog-posts-container {
   display: flex;

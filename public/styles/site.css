@@ -296,6 +296,21 @@ body {
 body {
   overflow-x: hidden; }
 
+.attention {
+  display: flex;
+  flex-direction: column;
+  margin: 10vw 10vw -8vw 10vw; }
+  .attention .attention-message {
+    text-align: center;
+    font-size: 1.7em;
+    line-height: 1.25em; }
+  .attention hr {
+    width: 20em;
+    border: none;
+    border: 2px solid #00A0FF;
+    border-radius: 5px;
+    margin-top: 1em; }
+
 #tiles {
   margin-top: 10%;
   display: flex;
@@ -523,6 +538,8 @@ body {
 
 /* hides the paragraphs in tiles for smaller desktops and tablets */
 @media only screen and (min-width: 480px) and (max-width: 1080px) {
+  .attention {
+    margin-top: 15vw; }
   #tiles .container .tile-container .overflow-hidden {
     width: 95%;
     height: 95%; }
@@ -557,6 +574,10 @@ body {
 
 /* changes text layout to a single column for tablets */
 @media only screen and (min-width: 480px) and (max-width: 819px) {
+  .attention {
+    margin-top: 0vw; }
+    .attention .attention-message {
+      font-size: 1.4em; }
   #about .about-section, #about .about-section-reverse {
     flex-direction: column;
     margin: none; }
@@ -606,6 +627,13 @@ body {
 
 /* puts the tiles in a single column and does some cosmetic changes to the text for phones */
 @media only screen and (max-width: 479px) {
+  .attention {
+    margin-top: 5vw;
+    margin-bottom: 0; }
+    .attention .attention-message {
+      font-size: 1.3em; }
+    .attention hr {
+      width: 10em; }
   #tiles {
     width: 100%;
     height: 294vw; }
